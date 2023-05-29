@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Player de Vídeo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    #video-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    #video-player {
+      width: 100%;
+      height: auto;
+    }
+
+    #video-select {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="video-container">
+    <h1>Player de Vídeo</h1>
+    <select id="video-select" onchange="changeVideo()">
+      <option value="">Selecione...</option>
+      <option value="Vídeos/1.mp4">Agora (Ahora)</option>
+      <option value="Vídeos/2.mp4">Na Conta Da Loucura</option>
+      <option value="Vídeos/3.mp4">Por um Minuto (Por un Minuto)</option>
+      <option value="Vídeos/4.mp4">Juras de Amor</option>
+      <option value="Vídeos/5.mp4">É com ela que eu estou</option>
+      <option value="Vídeos/6.mp4">Dormi na Praça</option>
+      <option value="Vídeos/7.mp4">Facas</option>
+      <option value="Vídeos/8.mp4">Caso Indefinido</option>
+      <option value="Vídeos/9.mp4">Maus Bocados</option>
+    </select>
+    <video id="video-player" controls controlsList="nodownload"></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
